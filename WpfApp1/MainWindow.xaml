@@ -1,0 +1,22 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" AllowsTransparency="True" WindowStyle="None" Opacity="100" Background="#00FFFFFF">
+    <Grid Margin="0,10,0,0" Name="Grid1">
+        <Grid.Background>
+            <ImageBrush ImageSource="spider-man.png"/>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Border BorderBrush="#00000000" BorderThickness="1" HorizontalAlignment="Left" Height="370" Margin="147,70,0,0" VerticalAlignment="Top" Width="511" MouseLeftButtonDown="Border_MouseLeftButtonDown" Background="#00000000"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="366,28,0,0" VerticalAlignment="Top" Width="75" Height="20" MouseDown="Button_MouseDown" Click="Button_Click"/>
+        <Image HorizontalAlignment="Left" Height="185" Margin="554,245,0,0" VerticalAlignment="Top" Width="216" Name="Image1" Source="spider-man.png" Visibility="Visible" Panel.ZIndex="2"/>
+        <Image HorizontalAlignment="Left" Height="174" Margin="10,28,0,0" VerticalAlignment="Top" Width="216" Name="Image2"  Source="spider-man.png" Visibility="Hidden" Panel.ZIndex="2"/>
+        <Image HorizontalAlignment="Left" Height="174" Margin="10,28,0,0" VerticalAlignment="Top" Width="216" Name="Image3"  Source="among-us-pngs.png" Visibility="Visible" Panel.ZIndex="2"/>
+    </Grid>
+</Window>
